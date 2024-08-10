@@ -2,12 +2,6 @@ import { defineUserConfig } from "vuepress";
 
 import theme from "./theme.js";
 
-const patterns = ["**/*.md", "**/*.vue", "!**/_*.md"];
-
-if (process.env.NODE_ENV !== "production") {
-  patterns.pop();
-}
-
 export default defineUserConfig({
   base: "/",
 
@@ -17,7 +11,7 @@ export default defineUserConfig({
 
   theme,
 
-  patterns,
+  pagePatterns: ["**/*.md", "!**/_*.md", "!.vuepress", "!node_modules"],
 
   // 和 PWA 一起启用
   // shouldPrefetch: false,

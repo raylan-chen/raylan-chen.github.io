@@ -4,7 +4,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://raylan-chen.github.io",
 
   author: {
     name: "raylan.chen",
@@ -30,28 +30,28 @@ export default hopeTheme({
   displayFooter: true,
 
   // 博客相关
-  blog: {
-    description: "一个初出茅庐的少年",
-    intro: "/intro.html",
-    medias: {
-      Email: "mailto:info@example.com",
-      Gitee: "https://example.com",
-      GitHub: "https://example.com",
-      Gmail: "mailto:info@example.com",
+  // blog: {
+  //   description: "一个初出茅庐的少年",
+  //   intro: "/intro.html",
+  //   medias: {
+  //     Email: "mailto:info@example.com",
+  //     Gitee: "https://example.com",
+  //     GitHub: "https://example.com",
+  //     Gmail: "mailto:info@example.com",
       
-      VuePressThemeHope: {
-        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
-        link: "https://theme-hope.vuejs.press",
-      },
-    },
-  },
+  //     VuePressThemeHope: {
+  //       icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+  //       link: "https://theme-hope.vuejs.press",
+  //     },
+  //   },
+  // },
 
   // 加密配置
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": ["1234"],
-    },
-  },
+  // encrypt: {
+  //   config: {
+  //     //"/demo/encrypt.html": ["1234"],
+  //   },
+  // },
 
   // 多语言配置
   metaLocales: {

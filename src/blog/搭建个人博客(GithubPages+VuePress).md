@@ -388,10 +388,9 @@ hope-demo
 ```
 
 
-
 ### 目录自动生成
 
-/src/demo/README.md
+`/src/demo/README.md` 文件
 
 ```markdown
 ---
@@ -464,7 +463,7 @@ Done in 36.2s
 
 ### 博客首页
 
-/src/README.md  
+`/src/README.md ` 
 
 默认的博客首页差不多呈以下界面
 
@@ -487,6 +486,20 @@ Done in 36.2s
 根据生成的侧边栏文件，照葫芦画瓢，修改成自定义内容  
 图标可以参考<https://fontawesome.com/search>中的图标名称  
 官方文档<https://theme-hope.vuejs.press/zh/guide/interface/icon.html>
+
+### 草稿
+
+貌似没有草稿功能的直接实现，但是可以通过pagePatterns实现  
+参考  
+<https://zhaohaodang.com/posts/vuepress%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E8%8D%89%E7%A8%BF%E5%8A%9F%E8%83%BD.html>  
+<https://theme-hope.vuejs.press/zh/guide/markdown/content/include.html#%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95>  
+<https://vuejs.press/zh/reference/config.html#debug>  
+
+config.js 文件
+```js
+//忽略以'_'开头的md文件
+pagePatterns: ["**/*.md", "!**/_*.md", "!.vuepress", "!node_modules"],
+```
 
 ### TODO
 
