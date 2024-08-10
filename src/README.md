@@ -1,7 +1,7 @@
 ---
 #home: true
 title: 首页
-icon: home
+icon: house
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 heroText: Raylan-Chen的博客
 tagline: 记录自己的一些所学所得
@@ -31,7 +31,7 @@ footer: MIT Licensed | Copyright © 2019-present Mr.Hope
 ## 博客的搭建
 在搭建自己的博客时，遇到了许多困难，多亏了 官方提供的技术文档以及大佬分享的博客 使得问题得到了解决！！！
 * [VuePress](https://vuepress.vuejs.org/zh/)
-* [Hope主题](https://github.com/vuepress-theme-hope/vuepress-theme-hope)
+* [Hope主题](https://theme-hope.vuejs.press/zh/)
 * [Github Pages](https://docs.github.com/zh/pages/getting-started-with-github-pages/creating-a-github-pages-site)
 * [冴羽](https://github.com/mqyqingfeng/Blog/issues/235)
 
