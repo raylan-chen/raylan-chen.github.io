@@ -4,12 +4,14 @@
 
 **下载 Git**
 
+
 **全局设置**
 
 ```bash
 git config --global user.name
 git config --global user.email
 ```
+
 
 **生成密钥**
 
@@ -18,8 +20,8 @@ git config --global user.email
 ls -al ~/.ssh
 #生成，-t 密钥类型，-C 添加一个标签 通常为邮箱
 ssh-keygen -t ed25519 -C "your_email@example.com"
-
 ```
+
 
 **启动ssh agent，并添加密钥**
 
@@ -30,7 +32,9 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/私钥名字
 ```
 
+
 **查看公钥，将公钥添加到 gitee.com / github.com**
+
 
 **测试连接**
 
@@ -39,7 +43,9 @@ ssh -T git@gitee.com
 (记得输入'yes')
 ```
 
+
 **创建远程仓库**
+
 
 **关联本地仓库**
 
@@ -51,6 +57,7 @@ git remote add 标签名 git@gitee.com:用户名/仓库
 #删除
 git remote rm 标签名
 ```
+
 
 **Git基本使用**
 
@@ -74,20 +81,64 @@ git log
 git add . && git commit -m "修改标记" && git push 远程仓库 本地仓库分支
 ```
 
+
+**Git分支**
+
+```bash
+# 创建分支
+git branch branch_name
+# 切换分支
+git checkout branch_name
+# 创建并切换新分支
+git checkout -b new_branch_name
+# 查看所有分支
+git branch
+# 查看 本地分支 和 远程分支
+git branch -a
+# 合并分支
+git merge branch_name
+# 删除分支(-d 改为 -D 强制删除)
+git branch -d branch_name
+
+```
+
+
 **Git回退**
 
 ```bash
-# 软重置（保留更改）
-# 软重置会将提交记录移回到指定的提交，但是保留工作目录中的更改：
+# 软重置（保留更改） 
+# 软重置会将 提交记录 移回到指定的提交，但是 保留 工作目录 中的更改：
 # HEAD~1 表示上一个提交。你也可以使用 HEAD~2、HEAD~3 等来撤销更早的提交
 git reset --soft HEAD~1
 # 硬重置（丢弃更改）
-# 硬重置会将提交记录和工作目录都回滚到指定的提交，这将丢弃所有未提交的更改：
+# 硬重置会将 提交记录 和 工作目录 都回滚到指定的提交，这将丢弃所有未提交的更改：
 git reset --hard HEAD~1
 
-# 如果你需要保留提交记录但撤销某次提交的更改，可以使用 git revert
+# 如果你需要保留提交记录但 撤销某次提交 的更改，可以使用 git revert
 git revert <commit-hash>
 ```
+
+
+**git push**
+
+[菜鸟教程 git push命令](https://www.runoob.com/git/git-push.html)
+
+```bash
+git push <远程主机名> <本地分支名>:<远程分支名>
+# 如果本地分支名与远程分支名相同，则可以省略冒号
+git push <远程主机名> <本地分支名>
+```
+
+-u
+
+```bash
+# -u 或 --set-upstream: 这个选项用于告诉 Git 将本地分支与远程分支关联起来。这意味着在以后的推送和拉取操作中，您可以仅使用 git push 或 git pull，而不需要每次都指定远程和分支名
+git push -u
+# 解除用 git push -u 建立的关联
+# 在该分支上，可以省略 branch_name
+git branch --unset-upstream branch_name
+```
+
 
 **注意点**
 

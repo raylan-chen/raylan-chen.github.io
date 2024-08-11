@@ -529,9 +529,25 @@ _*.md
 
 ## Github Pages 布署
 
-将项目部署到Github Pages中的 `username.github.io` 仓库中  
+**参考链接**  
+<https://theme-reco.vuejs.press/blogs/deploy.html#%E6%89%8B%E5%8A%A8%E9%83%A8%E7%BD%B2>
+<https://juejin.cn/post/7189073364365869093#heading-21>
+
+将项目部署到Github Pages中的 `username.github.io` 仓库中（之前已经在Github创建完毕，仓库为 public 公开的）  
 可以通过Shell脚本来执行以下操作  
 在博客根目录创建一个deploy.sh文件
+
+先将 /blog(博客网站的根目录) 全部的修改文件提交到本地仓库
+```bash
+git add .
+git commit -m "MESSAGE"
+```
+随后，到根目录运行deploy.sh文件（Windows，Git Bash）
+
+```bash
+bash deploy.sh
+```
+deploy.sh文件示例：
 ```shell
 # 确保脚本抛出遇到的错误
 set -e
@@ -539,11 +555,11 @@ set -e
 # 生成静态文件
 pnpm run docs:build
 
-# 将博客的本地仓库（.md文件）推送到 <USERNAME>.github.io 远程仓库的主分支
+# 将博客的本地仓库主分支（.md文件）推送到 <USERNAME>.github.io 远程仓库的主分支
 # 注意添加.gitignore文件，可以将src/.vuepress/.cache/ src/.vuepress/.temp/ src/.vuepress/dist/ node_modules 等文件忽略,“src” 可能需要更改，不同的项目可能不同（例如 docs）
 # git push git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
-# 进入生成的文件夹
+# 进入生成的文件夹，注意 src 可能需要更改
 cd src/.vuepress/dist
 
 # 如果是发布到自定义域名
@@ -554,11 +570,8 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
-# 将生成的静态网页文件推送到 <USERNAME>.github.io 仓库的分支 gh-pages ，主分支当作 .md 文件存放处，gh-pages 分支当作生成的静态网页文件存放处，并且将Github Pages的Source 改成 gh-pages 分支，远程仓库不需要提前生成 gh-pages 分支，推送时会自动创建
-git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master:gh-pages
-
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+# 将生成的静态网页文件推送到 <USERNAME>.github.io 仓库的分支 gh-pages ，主分支当作 .md 文件存放处，gh-pages 分支当作生成的静态网页文件存放处，并且将Github Pages的 Source 改成 gh-pages 分支，远程仓库不需要提前生成 gh-pages 分支，推送时会自动创建
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master:gh-pages
 
 # 删除生成的静态网页文件
 # rm -rf *
@@ -567,4 +580,19 @@ git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master:gh-pages
 cd -
 
 ```
+
+接着，在Github的 username.github.io 仓库中更改设置
+
+![alt text](./assets/image3.png)
+
+Github Pages
+
+![alt text](./assets/image4.png)
+
+将 Branch 改成 gh-pages
+
+![alt text](./assets/image5.png)
+
+接下来，可以访问 https://username.github.io/ 测试下
+
 
