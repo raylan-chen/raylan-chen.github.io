@@ -67,13 +67,7 @@ export default sidebar({
       collapsible: true,
       // 可选的。设置分组是否默认展开，默认值是 false
       expanded: false,
-      children: [
-        {
-          text: "SkyTakeOut",
-          link: "/skyTakeOut/",
-          children: "structure",
-        },
-      ],
+      children: "structure",
     },
     {
       text: "Software",

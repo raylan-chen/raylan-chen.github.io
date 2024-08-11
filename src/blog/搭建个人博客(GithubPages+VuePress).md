@@ -481,11 +481,21 @@ Done in 36.2s
 
 随后，将不需要的内容删除
 
+
 ### 侧边栏
 
-根据生成的侧边栏文件，照葫芦画瓢，修改成自定义内容  
+根据生成的侧边栏文件，照葫芦画瓢，修改成自定义内容
+
+[通过文件结构自动生成侧边栏](https://theme-hope.vuejs.press/zh/guide/layout/sidebar.html#%E9%80%9A%E8%BF%87%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E4%BE%A7%E8%BE%B9%E6%A0%8F)
+
 图标可以参考<https://fontawesome.com/search>中的图标名称  
-官方文档<https://theme-hope.vuejs.press/zh/guide/interface/icon.html>
+[Hope官方文档](https://theme-hope.vuejs.press/zh/guide/interface/icon.html)
+
+
+### 导航栏
+
+[布局配置](https://theme-hope.vuejs.press/zh/guide/layout/navbar.html#%E5%B8%83%E5%B1%80%E9%85%8D%E7%BD%AE)
+
 
 ### 草稿
 
@@ -501,6 +511,60 @@ config.js 文件
 pagePatterns: ["**/*.md", "!**/_*.md", "!.vuepress", "!node_modules"],
 ```
 
+如果不想推送到Github远程仓库，可以在 .gitignore 文件中加上
+```
+_*.md
+```
+
+### 目录
+
+在使用[自动生成目录](https://theme-hope.vuejs.press/zh/guide/feature/catalog.html#%E8%87%AA%E5%8A%A8%E7%9B%AE%E5%BD%95%E9%A1%B5%E7%94%9F%E6%88%90)时，vuepress貌似是根据 文件夹中的README.md(文件夹命名) / markdown文件(其他文件命名) 中 [YTAML Frontmatter](https://theme-hope.vuejs.press/zh/cookbook/vuepress/page.html#frontmatter) 的 title 或者 一级标题（使用#标记的内容）来生成的，而不是根据markdown文件名或文件夹名  
+
+
+
 ### TODO
 
 博客还有很多不完善的地方，例如 搜索引擎、浏览量统计、评论等功能
+
+
+## Github Pages 布署
+
+将项目部署到Github Pages中的 `username.github.io` 仓库中  
+可以通过Shell脚本来执行以下操作  
+在博客根目录创建一个deploy.sh文件
+```shell
+# 确保脚本抛出遇到的错误
+set -e
+
+# 生成静态文件
+pnpm run docs:build
+
+# 将博客的本地仓库（.md文件）推送到 <USERNAME>.github.io 远程仓库的主分支
+# 注意添加.gitignore文件，可以将src/.vuepress/.cache/ src/.vuepress/.temp/ src/.vuepress/dist/ node_modules 等文件忽略,“src” 可能需要更改，不同的项目可能不同（例如 docs）
+# git push git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+
+# 进入生成的文件夹
+cd src/.vuepress/dist
+
+# 如果是发布到自定义域名
+# echo 'www.example.com' > CNAME
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# 如果发布到 https://<USERNAME>.github.io
+# 将生成的静态网页文件推送到 <USERNAME>.github.io 仓库的分支 gh-pages ，主分支当作 .md 文件存放处，gh-pages 分支当作生成的静态网页文件存放处，并且将Github Pages的Source 改成 gh-pages 分支，远程仓库不需要提前生成 gh-pages 分支，推送时会自动创建
+git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master:gh-pages
+
+# 如果发布到 https://<USERNAME>.github.io/<REPO>
+# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+
+# 删除生成的静态网页文件
+# rm -rf *
+
+#返回上一次访问的文件夹
+cd -
+
+```
+

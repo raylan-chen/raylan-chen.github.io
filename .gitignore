@@ -10,4 +10,4 @@ src/.vuepress/dist/
 images
 *.log
 .yarn
-*-vip.md
+_*.md
