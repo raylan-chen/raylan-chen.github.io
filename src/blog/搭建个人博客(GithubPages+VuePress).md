@@ -505,7 +505,7 @@ Done in 36.2s
 <https://theme-hope.vuejs.press/zh/guide/markdown/content/include.html#%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95>  
 <https://vuejs.press/zh/reference/config.html#debug>  
 
-config.js 文件
+src\\.vuepress\\config.ts 文件
 ```js
 //忽略以'_'开头的md文件
 pagePatterns: ["**/*.md", "!**/_*.md", "!.vuepress", "!node_modules"],
@@ -519,6 +519,16 @@ _*.md
 ### 目录
 
 在使用[自动生成目录](https://theme-hope.vuejs.press/zh/guide/feature/catalog.html#%E8%87%AA%E5%8A%A8%E7%9B%AE%E5%BD%95%E9%A1%B5%E7%94%9F%E6%88%90)时，vuepress貌似是根据 文件夹中的README.md(文件夹命名) / markdown文件(其他文件命名) 中 [YTAML Frontmatter](https://theme-hope.vuejs.press/zh/cookbook/vuepress/page.html#frontmatter) 的 title 或者 一级标题（使用#标记的内容）来生成的，而不是根据markdown文件名或文件夹名  
+
+
+
+### 本地调试
+
+```bash
+pnpm run docs:dev
+```
+
+
 
 
 
@@ -595,4 +605,9 @@ Github Pages
 
 接下来，可以访问 https://username.github.io/ 测试下
 
+![2024-08-11-16-01-00](assets/搭建个人博客(GithubPages+VuePress)/2024-08-11-16-01-00.png)
+
+貌似可以查看Github Pages构建和布署进程
+
+![2024-08-11-16-02-29](assets/搭建个人博客(GithubPages+VuePress)/2024-08-11-16-02-29.png)
 

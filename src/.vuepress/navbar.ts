@@ -55,6 +55,38 @@ export default navbar([
         text: "SpringBoot",
         link: "/springboot/"
       },
+      {
+        text: "MyBatis",
+        link: "/mybatis/"
+      },
+    ]
+  },
+
+  {
+    text: "数据库",
+    link: "",
+    prefix: "",
+    children: [
+      {
+        text: "MySQL",
+        link: "/mysql/"
+      },
+    ]
+  },
+
+  {
+    text: "中间件",
+    link: "",
+    prefix: "",
+    children: [
+      {
+        text: "Redis",
+        link: "/redis/"
+      },
+      {
+        text: "MessageQueue",
+        link: "/message-queue/"
+      },
     ]
   },
 

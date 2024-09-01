@@ -1,32 +1,43 @@
 # SpringBoot整合Redis
 
+
+
 ## 参考链接
 
-<https://javabetter.cn/redis/redis-springboot.html>
+[Spring Boot 整合 Redis 缓存 | 二哥的Java进阶之路 (javabetter.cn)](https://javabetter.cn/redis/redis-springboot.html)
 
-<https://redis.com.cn/redis-lists.html>
+[Redis中文学习网 - Redis开发与运维技术、Redis教程、使用手册](https://redis.com.cn/)
 
-<https://javaguide.cn/database/redis/redis-data-structures-01.html>
+[Redis 5 种基本数据类型详解 | JavaGuide](https://javaguide.cn/database/redis/redis-data-structures-01.html)
 
-<黑马苍穹外卖>
+[Day07-06-缓存套餐_Spring Cache_介绍和常用注解 - 哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1TP411v7v6?p=91)
 
-<http://www.passjava.cn/#/01.PassJava/02.PassJava_Architecture/24.%E7%BC%93%E5%AD%98%E5%AE%9E%E6%88%98%EF%BC%88%E5%9B%9B%EF%BC%89SpringCache>
+[缓存实战4-SpringCache | PassJava](http://www.passjava.cn/my-project/passjava/02.passjava_architecture/21.spring_cache.html#统一缓存帝国-实战-spring-cache)
 
 [疑似抄袭，并且没贴参考链接，原创为上一个链接](https://juejin.cn/post/6997440726627778597)
 
-<https://blog.csdn.net/m0_62946761/article/details/129368226>
+[Spring Cache简单介绍和使用_使用springcache-CSDN博客](https://blog.csdn.net/m0_62946761/article/details/129368226)
 
-<https://blog.csdn.net/HeatDeath/article/details/79450409>
+[使用 Redis 连接池的原因_为什么要设置redispool-CSDN博客](https://blog.csdn.net/HeatDeath/article/details/79450409)
 
----
+[Redis第2讲——Java三种客户端（Jedis、Lettuce和Redisson）_rediscluster客户端java-CSDN博客](https://blog.csdn.net/weixin_45433817/article/details/135116224)
 
-### Redis
+
+
+## Redis
 
 内存中的数据结构存储系统，可以用作数据库、缓存和消息中间件
 
-支持的数据结构：字符串（string），散列（hash），列表（list），集合（set），有序集合（sorted set），位图（bitmaps），基数统计（hyperloglogs），地理空间（geospatoal）
+支持的数据结构：
 
-
+* 字符串（string）
+* 散列（hash）
+* 列表（list）
+* 集合（set）
+* 有序集合（sorted set）
+* 位图（bitmaps）
+* 基数统计（hyperloglogs）
+* 地理空间（geospatoal）
 
 
 
@@ -78,13 +89,9 @@ redis-cli.exe -h ip地址 -p 端口号（6379） -a 密码（可选）
 
 
 
-
-
 Redis客户端图形工具
 
 https://github.com/qishibo/AnotherRedisDesktopManager
-
-
 
 
 
@@ -94,9 +101,7 @@ https://redis.com.cn/redis-commands.html
 
 
 
-
-
-### SpringBoot整合Redis
+## SpringBoot整合Redis
 
 pom.xml引入引入依赖
 
@@ -150,9 +155,7 @@ RedisTemplate.opsForZSet     //操作 zset
 
 
 
-
-
-### SpringCache
+## SpringCache
 
 Spring Cache是Spring提供的缓存解决方案，本身并没有提供缓存的实现，但提供了一整套接口和代码规范、配置、注解等，可以整合各种缓存方案，不用关心操作缓存的细节
 
@@ -161,8 +164,6 @@ Spring Cache是Spring提供的缓存解决方案，本身并没有提供缓存�
 通过使用注解 @Cacheable、@CachePut、@CacheEvict、@EnableCaching 来操作缓存
 
 ![fa33619b-a426-4c7e-9d0c-dc695ac07249](./assets/fa33619b-a426-4c7e-9d0c-dc695ac07249.png)
-
-
 
 
 
@@ -264,7 +265,7 @@ spring:
 
 
 
-### Redis连接池
+## Redis连接池
 
 由于与Redis数据库 建立 / 断开 连接 可能需要消耗较多时间 （？，未经过测试），使用连接池可以实现客户端建立多个连接，需要的时候从连接池取出，用完再放回去，如此节省了 建立 / 断开 连接所消耗的时间
 
@@ -284,10 +285,31 @@ spring:
 
 
 
-**Redis客户端**
+## Redis客户端
 
-* Jedis：Spring Boot 1.5x 版本的默认Redis客户端，多线程环境下是非线程安全的 ？
-* Lettuce：Spring Boot 2.x 版本后默认的Redis客户端，支持多个线程并发访问 ？
+[Redis第2讲——Java三种客户端（Jedis、Lettuce和Redisson）_rediscluster客户端java-CSDN博客](https://blog.csdn.net/weixin_45433817/article/details/135116224)
+
+[redis三个连接客户端框架的选择：Jedis,Redisson,Lettuce_jedis lecture 比较-CSDN博客](https://blog.csdn.net/w1014074794/article/details/88827946)
+
+* Jedis
+  *  Java 实现的客户端
+  * Spring Boot 1.5x 版本的默认Redis客户端
+  * Jedis 客户端实例不是线程安全的，需要借助连接池来管理和使用 Jedis
+  * 使用的阻塞 I/O ，其方法调用都是同步的，程序流需要等待 sockets 处理完 I/O 才能执行，不支持异步
+  
+* Lettuce
+  * Java 实现的客户端
+  * Spring Boot 2.x 版本后默认的Redis客户端
+  * 线程安全，一个连接可以被多个线程共享
+  * 异步和非阻塞
+  * 响应式编程
+
+* Redisson
+  * 实现了分布式特性和可扩展的 Java 数据结构，例如分布式锁、分布式集合、分布式对象、分布式远程调度等
+  * 支持异步调用
+  * 线程安全
+
+
 
 
 

@@ -113,6 +113,50 @@ export default sidebar({
       expanded: false,
       children: 'structure',
     },
+    {
+      text: "MyBatis",
+      icon: "eye",
+      prefix: "mybatis/",
+      link: "mybatis/",
+      // 可选的, 设置分组是否可以折叠，默认值是 false,
+      collapsible: true,
+      // 可选的。设置分组是否默认展开，默认值是 false
+      expanded: false,
+      children: 'structure',
+    },
+    {
+      text: "MySQL",
+      icon: "umbrella",
+      prefix: "mysql/",
+      link: "mysql/",
+      // 可选的, 设置分组是否可以折叠，默认值是 false,
+      collapsible: true,
+      // 可选的。设置分组是否默认展开，默认值是 false
+      expanded: false,
+      children: 'structure',
+    },
+    {
+      text: "Redis",
+      icon: "print",
+      prefix: "redis/",
+      link: "redis/",
+      // 可选的, 设置分组是否可以折叠，默认值是 false,
+      collapsible: true,
+      // 可选的。设置分组是否默认展开，默认值是 false
+      expanded: false,
+      children: 'structure',
+    },
+    {
+      text: "MessageQueue",
+      icon: "bomb",
+      prefix: "message-queue/",
+      link: "message-queue/",
+      // 可选的, 设置分组是否可以折叠，默认值是 false,
+      collapsible: true,
+      // 可选的。设置分组是否默认展开，默认值是 false
+      expanded: false,
+      children: "structure",
+    },
     "intro",
   ],
 });

@@ -1,6 +1,5 @@
 # Git初探
 
----
 
 **下载 Git**
 
@@ -16,24 +15,29 @@ git config --global user.email
 **生成密钥**
 
 ```bash
-#检查
+# 检查
 ls -al ~/.ssh
-#生成，-t 密钥类型，-C 添加一个标签 通常为邮箱
+# 生成，-t 密钥类型，-C 添加一个标签 通常为邮箱
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
-
 
 **启动ssh agent，并添加密钥**
 
 ```bash
-#启动
+# 启动
 eval "$(ssh-agent -s)"
-#添加密钥
+# 添加密钥
 ssh-add ~/.ssh/私钥名字
 ```
 
+**查看公钥**
 
-**查看公钥，将公钥添加到 gitee.com / github.com**
+Git 生成的 SSH 公钥通常位于用户的主目录下的 `.ssh` 目录中。具体路径为：
+
+- Linux 和 macOS: `~/.ssh/id_xxx.pub`
+- Windows: `C:\Users\<YourUsername>\.ssh\id_xxx.pub`
+
+**将公钥添加到 gitee.com / github.com**
 
 
 **测试连接**
@@ -50,35 +54,35 @@ ssh -T git@gitee.com
 **关联本地仓库**
 
 ``` bash
-#查看已关联信息
+# 查看已关联信息
 git remote -v
-#关联
-git remote add 标签名 git@gitee.com:用户名/仓库
-#删除
-git remote rm 标签名
+# 关联
+git remote add <远程名称> git@gitee.com:用户名/仓库
+# 删除
+git remote rm <远程名称>
 ```
 
 
 **Git基本使用**
 
 ``` bash
-#将工作区文件添加到暂存区
+# 将工作区文件添加到暂存区
 git add
-	#添加全部更改
+	# 添加全部更改
 	git add .
 	git add *
-#提交暂存区到本地仓库
+# 提交暂存区到本地仓库
 git commit -m "文件更改的描述"
-#提交本地仓库到远程仓库
-git push 远程标记(git remote -v) 本地主分支
-	#强制推送(慎用！！！)
-	git push 远程标记 本地主分支 --force
-#拉取远程仓库到本地仓库
-git pull 远程标记 本地主分支
-#查看提交记录
+# 提交本地仓库到远程仓库
+git push <远程名称>(git remote -v) <本地分支>
+	# 强制推送(慎用！！！)
+	git push <远程名称> <本地分支> --force
+# 拉取远程仓库到本地仓库
+git pull <远程名称> <本地分支>
+# 查看提交记录
 git log
-#命令的合并使用
-git add . && git commit -m "修改标记" && git push 远程仓库 本地仓库分支
+# 命令的合并使用
+git add . && git commit -m "修改标记" && git push <远程仓库> <本地仓库分支>
 ```
 
 
@@ -138,6 +142,25 @@ git push -u
 # 在该分支上，可以省略 branch_name
 git branch --unset-upstream branch_name
 ```
+
+**git clone**
+
+```bash
+# 基本使用
+git clone <远程仓库URL>
+# 克隆整个仓库，包括所有分支，克隆后，工作目录会处于指定的分支
+git clone -b <分支名> <远程仓库URL>
+# 只获取指定的分支
+git clone -b <分支名> --single-branch <远程仓库URL>
+# 仅克隆最近的提交
+git clone --depth 1 <远程仓库URL>
+
+# 指定远程名称，git clone的远程名称默认为 origin
+git clone <远程仓库URL> --origin <远程名称>
+# 指定要创建的本地仓库名称
+git clone <远程仓库URL> <本地仓库名称>
+```
+
 
 
 **注意点**

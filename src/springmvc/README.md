@@ -3,7 +3,7 @@ title: SpringMVC
 index: false
 #icon: laptop-code
 category:
-  - 使用指南
+  - SpringMVC
 ---
 
 <Catalog />
