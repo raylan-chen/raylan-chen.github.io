@@ -1,8 +1,7 @@
 ---
 title: RabbitMQ初探
-index: false
 catrgory:
-  - 消息队列
+  - MessageQueue
 ---
 
 # RabbitMQ

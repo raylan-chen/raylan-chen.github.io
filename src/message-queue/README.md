@@ -1,8 +1,8 @@
 ---
-title: 消息队列
+title: MessageQueue
 index: false
 category:
-  - MQ
+  - MessageQueue
 ---
 
 <Catalog />
