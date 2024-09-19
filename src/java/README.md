@@ -1,8 +1,8 @@
 ---
-title: JavaSE
+title: Java
 index: false
 category:
-  - JavaSE
+  - Java
 ---
 
 <Catalog />

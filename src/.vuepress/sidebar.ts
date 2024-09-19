@@ -39,8 +39,8 @@ export default sidebar({
     {
       text: "JavaSE",
       icon: "hand",
-      prefix: "java-se/",
-      link: "java-se/",
+      prefix: "java/",
+      link: "java/",
       // 可选的, 设置分组是否可以折叠，默认值是 false,
       collapsible: true,
       // 可选的。设置分组是否默认展开，默认值是 false

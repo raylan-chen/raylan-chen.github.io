@@ -3,13 +3,13 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   {
-    text: "语言基础",
+    text: "编程语言",
     link: "",
     prefix: "",
     children: [
       {
-        text: "JavaSE",
-        link: "/java-se/",
+        text: "Java",
+        link: "/java/",
       }, 
     ]
   },
