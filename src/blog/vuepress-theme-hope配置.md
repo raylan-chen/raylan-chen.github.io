@@ -7,7 +7,7 @@ category:
 
 # vuepress-theme-hope配置
 
-## 参考链接
+## Mermaid插件支持
 
 [MdEnhance 插件配置 | vuepress-theme-hope](https://theme-hope.vuejs.press/zh/config/plugins/md-enhance.html#mermaid)
 
@@ -15,9 +15,7 @@ category:
 
 [npm最新淘宝镜像站已经更新（2024-2-22）_npm淘宝镜像最新-CSDN博客](https://blog.csdn.net/hap1994/article/details/136224744)
 
-
-
-## Mermaid插件支持
+<br/>
 
 ```shell
 pnpm add mermaid
@@ -168,3 +166,68 @@ export default hopeTheme(
 启动项目测试 `pnpm run docs:dev`
 
 访问 <http://localhost:8080/>
+
+
+
+## GFM警告
+
+[GFM 警告 | vuepress-theme-hope](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/alert.html)
+
+<br/>
+
+G:\blog-vuepress\blog\src\.vuepress\theme.ts
+
+```ts
+export default hopeTheme(
+    plugins: {
+        mdEnhance: {
+            // 启用 GFM 警告
+            alert: true,
+        }
+    }
+);
+```
+
+使用方法
+
+```
+> [!tips]
+> 提示信息
+```
+
+效果展示：
+
+> [!tip]
+>
+> 提示信息
+
+
+
+## 标记
+
+[标记 | vuepress-theme-hope](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/mark.html#%E9%85%8D%E7%BD%AE)
+
+<br/>
+
+G:\blog-vuepress\blog\src\.vuepress\theme.ts
+
+```ts
+export default hopeTheme(
+    plugins: {
+        mdEnhance: {
+            // 标记
+            mark: true,
+        }
+    }
+);
+```
+
+
+
+使用语法
+
+```
+== ==
+```
+
+效果展示：==标记==

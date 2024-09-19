@@ -80,6 +80,8 @@ export default hopeTheme({
     mdEnhance: {
       //Mermaid
       mermaid: true,
+      // 启用 GFM 警告
+      alert: true,
 
       align: true,
       attrs: true,
