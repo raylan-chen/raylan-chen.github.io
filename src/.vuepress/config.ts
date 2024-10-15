@@ -11,7 +11,15 @@ export default defineUserConfig({
 
   theme,
 
-  pagePatterns: ["**/*.md", "!**/_*.md", "!.vuepress", "!node_modules", "!**/12306"],
+  pagePatterns: [
+    "**/*.md", 
+    "!**/_*.md", 
+    "!.vuepress", 
+    "!node_modules", 
+    "!**/12306", 
+    "!**/dynamic-thread-pool", 
+    "!**/个人总结"
+  ],
 
   // 和 PWA 一起启用
   // shouldPrefetch: false,
