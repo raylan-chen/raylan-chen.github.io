@@ -6,7 +6,7 @@ heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 heroText: Raylan.Chen的博客
 tagline: 电子笔记本，记录自己的一些学习过程
 
-copyright: false
+#copyright: false
 footer: MIT Licensed | Copyright © 2024-present raylan.chen
 ---
 

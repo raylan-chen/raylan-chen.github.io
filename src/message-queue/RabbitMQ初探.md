@@ -1,6 +1,6 @@
 ---
 title: RabbitMQ初探
-catrgory:
+category:
   - MessageQueue
 ---
 
