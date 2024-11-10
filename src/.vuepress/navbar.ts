@@ -15,49 +15,41 @@ export default navbar([
   },
 
   {
-    text: "算法",
+    text: "计算机基础",
     link: "",
     prefix: "",
     children: [
       {
-        text: "Algorithm",
-        link: "/algorithm/",
+        text: "数据结构与算法",
+        link: "/basic_of_computer_science/algorithm/",
+      }, 
+      {
+        text: "操作系统",
+        link: "/basic_of_computer_science/operating_system/",
       }, 
     ]
   },
 
   {
-    text: "操作系统",
-    link: "",
-    prefix: "",
-    children: [
-      {
-        text: "Linux",
-        link: "/linux/",
-      }, 
-    ]
-  },
-
-  {
-    text: "框架",
+    text: "开源框架",
     link: "",
     prefix: "",
     children: [
       {
         text: "Spring",
-        link: "/spring/"
+        link: "/open_source_framework/spring/"
       },
       {
         text: "SpringMVC",
-        link: "/springmvc/"
+        link: "/open_source_framework/springmvc/"
       },
       {
         text: "SpringBoot",
-        link: "/springboot/"
+        link: "/open_source_framework/springboot/"
       },
       {
         text: "MyBatis",
-        link: "/mybatis/"
+        link: "/open_source_framework/mybatis/"
       },
     ]
   },
@@ -69,7 +61,11 @@ export default navbar([
     children: [
       {
         text: "MySQL",
-        link: "/mysql/"
+        link: "/database/mysql/"
+      },
+      {
+        text: "Redis",
+        link: "/database/redis/"
       },
     ]
   },
@@ -80,12 +76,8 @@ export default navbar([
     prefix: "",
     children: [
       {
-        text: "Redis",
-        link: "/redis/"
-      },
-      {
-        text: "MessageQueue",
-        link: "/message-queue/"
+        text: "消息队列",
+        link: "/middleware/message_queue/"
       },
     ]
   },
@@ -103,21 +95,13 @@ export default navbar([
   },
 
   {
-    text: "其他",
+    text: "开发工具",
     link: "",
     prefix: "",
     children: [
       {
-        text: "Git",
-        link: "/git/",
-      }, 
-      {
-        text: "Software",
-        link: "/software/",
-      }, 
-      {
-        text: "Blog",
-        link: "/blog/",
+        text: "开发工具",
+        link: "/development_tool/",
       }, 
     ]
   },

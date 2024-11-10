@@ -1,6 +1,7 @@
 ---
-title: sky-take-out
+title: MySQL
 index: false
 ---
 
 <Catalog />
+

@@ -10,7 +10,7 @@ src/.vuepress/dist/
 images
 *.log
 .yarn
-_*.md
+~*.md
 12306
 dynamic-thread-pool
 个人总结

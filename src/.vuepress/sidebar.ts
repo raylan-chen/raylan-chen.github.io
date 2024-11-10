@@ -4,54 +4,68 @@ export default sidebar({
   "/": [
     "",
     {
-      text: "Algorithm",
+      text: "Java",
       icon: "hippo",
-      prefix: "algorithm/",
-      link: "algorithm/",
-      // 可选的, 设置分组是否可以折叠，默认值是 false,
-      collapsible: true,
-      // 可选的。设置分组是否默认展开，默认值是 false
-      expanded: false,
-      children: "structure",
-    },
-    {
-      text: "Blog",
-      icon: "blog",
-      prefix: "blog/",
-      link: "blog/",
-      // 可选的, 设置分组是否可以折叠，默认值是 false,
-      collapsible: true,
-      // 可选的。设置分组是否默认展开，默认值是 false
-      expanded: false,
-      children: "structure",
-    },
-    {
-      text: "Git",
-      icon: "bomb",
-      prefix: "git/",
-      link: "git/",
-      // 可选的, 设置分组是否可以折叠，默认值是 false,
-      collapsible: true,
-      // 可选的。设置分组是否默认展开，默认值是 false
-      expanded: false,
-      children: "structure",
-    },
-    {
-      text: "JavaSE",
-      icon: "hand",
       prefix: "java/",
       link: "java/",
       // 可选的, 设置分组是否可以折叠，默认值是 false,
       collapsible: true,
       // 可选的。设置分组是否默认展开，默认值是 false
       expanded: false,
+      // children: "structure",
+      children: [
+        {
+          text: "JavaSE",
+          link: "java_se/"
+        },
+        {
+          text: "Java多线程编程",
+          link: "java_multithreading/"
+        },
+        {
+          text: "JVM",
+          link: "java_jvm/"
+        }
+      ]
+    },
+    {
+      text: "计算基础",
+      icon: "blog",
+      prefix: "basic_of_computer_science/",
+      link: "basic_of_computer_science/",
+      // 可选的, 设置分组是否可以折叠，默认值是 false,
+      collapsible: true,
+      // 可选的。设置分组是否默认展开，默认值是 false
+      expanded: false,
       children: "structure",
     },
     {
-      text: "Linux",
+      text: "开源框架",
+      icon: "bomb",
+      prefix: "open_source_framework/",
+      link: "open_source_framework/",
+      // 可选的, 设置分组是否可以折叠，默认值是 false,
+      collapsible: true,
+      // 可选的。设置分组是否默认展开，默认值是 false
+      expanded: false,
+      children: "structure",
+    },
+    {
+      text: "数据库",
+      icon: "hand",
+      prefix: "database/",
+      link: "database/",
+      // 可选的, 设置分组是否可以折叠，默认值是 false,
+      collapsible: true,
+      // 可选的。设置分组是否默认展开，默认值是 false
+      expanded: false,
+      children: "structure",
+    },
+    {
+      text: "中间件",
       icon: "umbrella",
-      prefix: "linux/",
-      link: "linux/",
+      prefix: "middleware/",
+      link: "middleware/",
       // 可选的, 设置分组是否可以折叠，默认值是 false,
       collapsible: true,
       // 可选的。设置分组是否默认展开，默认值是 false
@@ -59,7 +73,7 @@ export default sidebar({
       children: 'structure',
     },
     {
-      text: "Project",
+      text: "项目",
       icon: "film",
       prefix: "project/",
       link: "project/",
@@ -70,92 +84,15 @@ export default sidebar({
       children: "structure",
     },
     {
-      text: "Software",
+      text: "开发工具",
       icon: "print",
-      prefix: "software/",
-      link: "software/",
+      prefix: "development_tool/",
+      link: "development_tool/",
       // 可选的, 设置分组是否可以折叠，默认值是 false,
       collapsible: true,
       // 可选的。设置分组是否默认展开，默认值是 false
       expanded: false,
       children: 'structure',
-    },
-    {
-      text: "Spring",
-      icon: "eye",
-      prefix: "spring/",
-      link: "spring/",
-      // 可选的, 设置分组是否可以折叠，默认值是 false,
-      collapsible: true,
-      // 可选的。设置分组是否默认展开，默认值是 false
-      expanded: false,
-      children: 'structure',
-    },
-    {
-      text: "SpringMVC",
-      icon: "fire",
-      prefix: "springmvc/",
-      link: "springmvc/",
-      // 可选的, 设置分组是否可以折叠，默认值是 false,
-      collapsible: true,
-      // 可选的。设置分组是否默认展开，默认值是 false
-      expanded: false,
-      children: 'structure',
-    },
-    {
-      text: "SpringBoot",
-      icon: "code",
-      prefix: "springboot/",
-      link: "springboot/",
-      // 可选的, 设置分组是否可以折叠，默认值是 false,
-      collapsible: true,
-      // 可选的。设置分组是否默认展开，默认值是 false
-      expanded: false,
-      children: 'structure',
-    },
-    {
-      text: "MyBatis",
-      icon: "eye",
-      prefix: "mybatis/",
-      link: "mybatis/",
-      // 可选的, 设置分组是否可以折叠，默认值是 false,
-      collapsible: true,
-      // 可选的。设置分组是否默认展开，默认值是 false
-      expanded: false,
-      children: 'structure',
-    },
-    {
-      text: "MySQL",
-      icon: "umbrella",
-      prefix: "mysql/",
-      link: "mysql/",
-      // 可选的, 设置分组是否可以折叠，默认值是 false,
-      collapsible: true,
-      // 可选的。设置分组是否默认展开，默认值是 false
-      expanded: false,
-      children: 'structure',
-    },
-    {
-      text: "Redis",
-      icon: "print",
-      prefix: "redis/",
-      link: "redis/",
-      // 可选的, 设置分组是否可以折叠，默认值是 false,
-      collapsible: true,
-      // 可选的。设置分组是否默认展开，默认值是 false
-      expanded: false,
-      children: 'structure',
-    },
-    {
-      text: "MessageQueue",
-      icon: "bomb",
-      prefix: "message-queue/",
-      link: "message-queue/",
-      // 可选的, 设置分组是否可以折叠，默认值是 false,
-      collapsible: true,
-      // 可选的。设置分组是否默认展开，默认值是 false
-      expanded: false,
-      children: "structure",
     },
     "intro",
   ],

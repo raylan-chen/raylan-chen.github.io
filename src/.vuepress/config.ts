@@ -13,7 +13,7 @@ export default defineUserConfig({
 
   pagePatterns: [
     "**/*.md", 
-    "!**/_*.md", 
+    "!**/~*.md", 
     "!.vuepress", 
     "!node_modules", 
     "!**/12306", 

@@ -1,5 +1,5 @@
 ---
-title: sky-take-out
+title: 博客搭建
 index: false
 ---
 

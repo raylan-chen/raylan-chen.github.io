@@ -16,7 +16,7 @@
 
 ​	Payload（载荷）：传输的 用户信息 和 其他数据
 
-​	Signature（签名）：由Header、Playload 和 密钥 生成的签名，用于验证令牌的真实性
+​	Signature（签名）：由Header、Playload 和 密钥 生成的签名，用于验证令牌的真实性和完整性
 
 > JWT令牌在传输时**不会**包括秘钥（secret）
 >

@@ -1,8 +1,6 @@
 ---
-title: Project
+title: 项目
 index: false
-category:
-  - Project
 ---
 
 这里记录了自己做项目时学到的一些收获...
