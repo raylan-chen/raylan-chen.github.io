@@ -52,7 +52,7 @@ export default sidebar({
     },
     {
       text: "数据库",
-      icon: "hand",
+      icon: "database",
       prefix: "database/",
       link: "database/",
       // 可选的, 设置分组是否可以折叠，默认值是 false,
@@ -85,7 +85,7 @@ export default sidebar({
     },
     {
       text: "开发工具",
-      icon: "print",
+      icon: "toolbox",
       prefix: "development_tool/",
       link: "development_tool/",
       // 可选的, 设置分组是否可以折叠，默认值是 false,

@@ -1,5 +1,10 @@
-# 搭建个人博客(GithubPages+VuePress)
+---
+title: 搭建个人博客(GithubPages + VuePress)
+category:
+  - Blog
+---
 
+# 搭建个人博客(GithubPages + VuePress)
 
 
 ## 参考链接

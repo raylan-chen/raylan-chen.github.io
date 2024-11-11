@@ -8,7 +8,7 @@ category:
 
 ## 扩展
 
-### Paste Image  
+### Paste Image
 
 **参考链接**  
 

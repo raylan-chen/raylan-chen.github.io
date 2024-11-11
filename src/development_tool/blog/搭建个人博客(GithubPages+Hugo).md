@@ -1,4 +1,10 @@
-# 搭建个人博客（Github + Hugo）
+---
+title: 搭建个人博客（GithubPages + Hugo）
+category:
+  - Blog
+---
+
+# 搭建个人博客（GithubPages + Hugo）
 
 
 

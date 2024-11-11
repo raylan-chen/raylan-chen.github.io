@@ -2,7 +2,6 @@
 title: vuepress-theme-hope配置
 category:
   - Blog
-
 ---
 
 # vuepress-theme-hope配置

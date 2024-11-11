@@ -1,6 +1,10 @@
+---
+title: Hugo使用学习
+category:
+  - Blog
+---
+
 # Hugo使用学习
-
-
 
 ## Markdown 引用图片
 

@@ -17,7 +17,7 @@ export default defineUserConfig({
     "!.vuepress", 
     "!node_modules", 
     "!**/12306", 
-    "!**/dynamic-thread-pool", 
+    "!**/dynamic_thread_pool", 
     "!**/个人总结"
   ],
 

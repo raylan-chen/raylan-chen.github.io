@@ -84,25 +84,13 @@ export default navbar([
 
   {
     text: "项目",
-    link: "",
+    link: "/project/",
     prefix: "",
-    children: [
-      {
-        text: "Project",
-        link: "/project/",
-      }, 
-    ]
   },
 
   {
     text: "开发工具",
-    link: "",
+    link: "/development_tool/",
     prefix: "",
-    children: [
-      {
-        text: "开发工具",
-        link: "/development_tool/",
-      }, 
-    ]
   },
 ]);
