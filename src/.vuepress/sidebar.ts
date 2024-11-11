@@ -29,7 +29,7 @@ export default sidebar({
       ]
     },
     {
-      text: "计算基础",
+      text: "计算机基础",
       icon: "blog",
       prefix: "basic_of_computer_science/",
       link: "basic_of_computer_science/",

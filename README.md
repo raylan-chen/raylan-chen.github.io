@@ -28,4 +28,9 @@
 * [沉默王二](https://javabetter.cn/)
 * [JavaGuide](https://javaguide.cn/)
 * [小林Coding](https://xiaolincoding.com/)
+* [编程指北](https://csguide.cn/)
+* [帅地玩Offer](https://www.playoffer.cn/)
+* [拿个offer-开源&项目实战 | 拿个offer-开源&项目实战](https://nageoffer.com/)
+* [小傅哥 bugstack 虫洞栈](https://bugstack.cn/)
+* [阿秀的学习笔记](https://interviewguide.cn/)
 
