@@ -1,14 +1,18 @@
+---
+title: Chocolatey
+category:
+  - 开发工具
+---
+
 # Chocolatey
-
-
 
 ## 参考链接
 
-https://javabetter.cn/gongju/choco.html
+<https://javabetter.cn/gongju/choco.html>
 
-https://blog.csdn.net/yihuajack/article/details/123852060
+<https://blog.csdn.net/yihuajack/article/details/123852060>
 
-https://blog.csdn.net/Kaia_sv/article/details/135046005
+<https://blog.csdn.net/Kaia_sv/article/details/135046005>
 
 
 

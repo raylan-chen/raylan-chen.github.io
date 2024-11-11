@@ -1,6 +1,10 @@
-# VSCode
+---
+title: Visual Studio Code
+category:
+  - 开发工具
+---
 
-
+# Visual Studio Code
 
 ## 扩展
 

@@ -5,7 +5,7 @@ export default sidebar({
     "",
     {
       text: "Java",
-      icon: "hippo",
+      icon: "code",
       prefix: "java/",
       link: "java/",
       // 可选的, 设置分组是否可以折叠，默认值是 false,
@@ -30,7 +30,7 @@ export default sidebar({
     },
     {
       text: "计算机基础",
-      icon: "blog",
+      icon: "hippo",
       prefix: "basic_of_computer_science/",
       link: "basic_of_computer_science/",
       // 可选的, 设置分组是否可以折叠，默认值是 false,
