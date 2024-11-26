@@ -34,14 +34,16 @@ footer: MIT Licensed | Copyright © 2024-present raylan.chen
 
 ## Java后端开发
 
-最近，自己在学习 Java后端开发 的相关知识，这一路上算是走得有点跌跌撞撞的，不过好在有 各位技术博主分享的博客，使得自己成长了一些，在此，向各位技术博主致敬、感谢！！！
+最近，自己在学习 Java后端开发 的相关知识，这一路上算是走得有点跌跌撞撞的，不过好在有 各位技术博主分享的博客，使得自己成长了一些，在此，向各位技术博主致敬、感谢！！！（排名不分先后顺序）
 
 * [沉默王二](https://javabetter.cn/)
+* [代码随想录](https://www.programmercarl.com/)
 * [JavaGuide](https://javaguide.cn/)
 * [小林Coding](https://xiaolincoding.com/)
 * [编程指北](https://csguide.cn/)
 * [帅地玩Offer](https://www.playoffer.cn/)
 * [拿个offer-开源&项目实战 | 拿个offer-开源&项目实战](https://nageoffer.com/)
+* [Krahets 的题解](https://leetcode.cn/circle/discuss/kQcYo2/)
 * [小傅哥 bugstack 虫洞栈](https://bugstack.cn/)
 * [阿秀的学习笔记](https://interviewguide.cn/)
 

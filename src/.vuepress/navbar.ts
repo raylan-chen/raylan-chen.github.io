@@ -51,6 +51,10 @@ export default navbar([
         text: "MyBatis",
         link: "/open_source_framework/mybatis/"
       },
+      {
+        text: "SpringCloud",
+        link: "/open_source_framework/springcloud/"
+      },
     ]
   },
 

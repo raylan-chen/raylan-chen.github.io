@@ -281,7 +281,7 @@ C:\Users\WIN11>mklink /j "C:\Program Files\Docker" "G:\Software\Docker"
 
 
 
-不过可以改下镜像的存放位置
+不过可以改下镜像的存放位置（我把镜像放在了G盘启动时貌似会很慢？难不成是因为G盘是机械硬盘的原因？还是另有其他原因？只能老老实实不改镜像位置了）
 
 [Windows安装Docker、自定义安装目录_docker desktop安装其他盘-CSDN博客](https://blog.csdn.net/CUFEECR/article/details/134626579)
 
