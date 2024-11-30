@@ -95,5 +95,13 @@ export default sidebar({
       children: 'structure',
     },
     "intro",
+    {
+      text: "更新时间线",
+      link: "https://raylan-chen.github.io/article/",
+    },
+    {
+      text: "文章分类",
+      link: "https://raylan-chen.github.io/category/algorithm/",
+    },
   ],
 });
