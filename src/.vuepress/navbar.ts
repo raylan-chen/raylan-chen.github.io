@@ -9,7 +9,7 @@ export default navbar([
     children: [
       {
         text: "Java",
-        link: "/java/",
+        link: "programming_language/java/",
       }, 
     ]
   },
@@ -27,34 +27,6 @@ export default navbar([
         text: "操作系统",
         link: "/basic_of_computer_science/operating_system/",
       }, 
-    ]
-  },
-
-  {
-    text: "开源框架",
-    link: "",
-    prefix: "",
-    children: [
-      {
-        text: "Spring",
-        link: "/open_source_framework/spring/"
-      },
-      {
-        text: "SpringMVC",
-        link: "/open_source_framework/springmvc/"
-      },
-      {
-        text: "SpringBoot",
-        link: "/open_source_framework/springboot/"
-      },
-      {
-        text: "MyBatis",
-        link: "/open_source_framework/mybatis/"
-      },
-      {
-        text: "SpringCloud",
-        link: "/open_source_framework/springcloud/"
-      },
     ]
   },
 
@@ -84,12 +56,6 @@ export default navbar([
         link: "/middleware/message_queue/"
       },
     ]
-  },
-
-  {
-    text: "项目",
-    link: "/project/",
-    prefix: "",
   },
 
   {

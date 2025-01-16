@@ -1,5 +1,5 @@
 ---
-title: UML 图
+title: UML图
 category:
   - 开发工具
 ---
@@ -47,7 +47,7 @@ category:
 + 交互概述图（Interaction Overview Diagram）
 + 时序图（Timing Diagram）
 
-![图片来源：https://www.visual-paradigm.com/cn/guide/uml-unified-modeling-language/what-is-uml/#timing-diagram](./assets/UML 图/02-uml-diagram-types.png)
+![图片来源：https://www.visual-paradigm.com/cn/guide/uml-unified-modeling-language/what-is-uml/#timing-diagram](./assets/UML图/02-uml-diagram-types.png)
 
 # 类图
 ✨访问修饰符的表示
@@ -68,23 +68,23 @@ category:
 
 1、类（成员变量及类型、方法的参数及返回类型）
 
-![图片来源：https://zhuanlan.zhihu.com/p/109655171](./assets/UML 图/image.png)
+![图片来源：https://zhuanlan.zhihu.com/p/109655171](./assets/UML图/image.png)
 
 2、接口（抽象类为`<<abstract>>`）
 
-![图片来源：https://zhuanlan.zhihu.com/p/109655171](./assets/UML 图/image (1).png)
+![图片来源：https://zhuanlan.zhihu.com/p/109655171](./assets/UML图/image (1).png)
 
 
 
 ✨线条与箭头总览：
 
-![图片来源：https://zh.wikipedia.org/wiki/%E9%A1%9E%E5%88%A5%E5%9C%96](./assets/UML 图/Uml_classes_en.svg (1).png)
+![图片来源：https://zh.wikipedia.org/wiki/%E9%A1%9E%E5%88%A5%E5%9C%96](./assets/UML图/Uml_classes_en.svg (1).png)
 
 
 
 ✨泛化（Generalization） / 继承（Inheritance）
 
-![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML 图/jzjv0xqpix.png)
+![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML图/jzjv0xqpix.png)
 
 
 
@@ -92,7 +92,7 @@ category:
 
 个人的理解记忆：实现有“实”字却比较“虚”（三角形为空心），而继承是“实实在在”的（三角形为实心）。
 
-![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML 图/vdfl2tolj4.png)
+![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML图/vdfl2tolj4.png)
 
 
 
@@ -102,7 +102,7 @@ category:
 
 2、聚合关系，整体和部分不是强依赖，即使整体不存在了，部分仍可以存在，弱包含，"... owns a ..."。
 
-![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML 图/z2hc84u85p.png)
+![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML图/z2hc84u85p.png)
 
 
 
@@ -114,7 +114,7 @@ category:
 
 3、个人理解性记忆：组合关系比较“实”（菱形为实心），整体不存在则部分也不存在了；而聚合关系整体与部分就比较“虚”了（菱形为实心），整体不存在，部分仍可存在。
 
-![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML 图/l3twdqf7fi.png)
+![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML图/l3twdqf7fi.png)
 
 
 
@@ -124,7 +124,7 @@ category:
 
 2、代码体现：函数参数。
 
-![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML 图/lplv4x1l3v.png)
+![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML图/lplv4x1l3v.png)
 
 
 
@@ -136,7 +136,7 @@ category:
 
 （图片中线存在箭头，可能去掉箭头更合适）
 
-![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML 图/vln39o32er.png)
+![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML图/vln39o32er.png)
 
 
 
