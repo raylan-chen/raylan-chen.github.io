@@ -9,7 +9,7 @@ export default navbar([
     children: [
       {
         text: "Java",
-        link: "programming_language/java/",
+        link: "/programming_language/java/",
       }, 
     ]
   },

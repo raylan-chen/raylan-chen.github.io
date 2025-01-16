@@ -72,13 +72,13 @@ category:
 
 2、接口（抽象类为`<<abstract>>`）
 
-![图片来源：https://zhuanlan.zhihu.com/p/109655171](./assets/UML图/image (1).png)
+![图片来源：https://zhuanlan.zhihu.com/p/109655171](./assets/UML图/image2.png)
 
 
 
 ✨线条与箭头总览：
 
-![图片来源：https://zh.wikipedia.org/wiki/%E9%A1%9E%E5%88%A5%E5%9C%96](./assets/UML图/Uml_classes_en.svg (1).png)
+![图片来源：https://zh.wikipedia.org/wiki/%E9%A1%9E%E5%88%A5%E5%9C%96](./assets/UML图/Uml_classes_en.svg.png)
 
 
 
