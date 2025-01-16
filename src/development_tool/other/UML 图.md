@@ -47,7 +47,7 @@ category:
 + 交互概述图（Interaction Overview Diagram）
 + 时序图（Timing Diagram）
 
-![图片来源：https://www.visual-paradigm.com/cn/guide/uml-unified-modeling-language/what-is-uml/#timing-diagram](https://cdn.nlark.com/yuque/0/2025/png/39041043/1737013065252-3d134c3d-2356-44d7-aa84-475d7527a426.png)
+![图片来源：https://www.visual-paradigm.com/cn/guide/uml-unified-modeling-language/what-is-uml/#timing-diagram](./assets/UML 图/02-uml-diagram-types.png)
 
 # 类图
 ✨访问修饰符的表示
@@ -68,23 +68,23 @@ category:
 
 1、类（成员变量及类型、方法的参数及返回类型）
 
-![图片来源：https://zhuanlan.zhihu.com/p/109655171](https://cdn.nlark.com/yuque/0/2025/png/39041043/1737017192540-a04546a0-3370-428b-ba44-eb00cb9dc877.png)
+![图片来源：https://zhuanlan.zhihu.com/p/109655171](./assets/UML 图/image.png)
 
 2、接口（抽象类为`<<abstract>>`）
 
-![图片来源：https://zhuanlan.zhihu.com/p/109655171](https://cdn.nlark.com/yuque/0/2025/png/39041043/1737016975467-49b1b5ce-6b9a-4c95-ae94-c24421c1c969.png)
+![图片来源：https://zhuanlan.zhihu.com/p/109655171](./assets/UML 图/image (1).png)
 
 
 
 ✨线条与箭头总览：
 
-![图片来源：https://zh.wikipedia.org/wiki/%E9%A1%9E%E5%88%A5%E5%9C%96](https://cdn.nlark.com/yuque/0/2025/png/39041043/1737013968604-15baeedb-ec32-4970-86cb-baf6dd7f1e24.png)
+![图片来源：https://zh.wikipedia.org/wiki/%E9%A1%9E%E5%88%A5%E5%9C%96](./assets/UML 图/Uml_classes_en.svg (1).png)
 
 
 
 ✨泛化（Generalization） / 继承（Inheritance）
 
-![图片来源：https://cloud.tencent.com/developer/article/1684161](https://cdn.nlark.com/yuque/0/2025/png/39041043/1737013684862-81c9599e-c4f7-49c4-b6ce-44cb22c77ab3.png)
+![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML 图/jzjv0xqpix.png)
 
 
 
@@ -92,7 +92,7 @@ category:
 
 个人的理解记忆：实现有“实”字却比较“虚”（三角形为空心），而继承是“实实在在”的（三角形为实心）。
 
-![图片来源：https://cloud.tencent.com/developer/article/1684161](https://cdn.nlark.com/yuque/0/2025/png/39041043/1737014012215-e34e99b0-04e7-4c01-af30-49b8ac9d0d26.png)
+![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML 图/vdfl2tolj4.png)
 
 
 
@@ -102,7 +102,7 @@ category:
 
 2、聚合关系，整体和部分不是强依赖，即使整体不存在了，部分仍可以存在，弱包含，"... owns a ..."。
 
-![图片来源：https://cloud.tencent.com/developer/article/1684161](https://cdn.nlark.com/yuque/0/2025/png/39041043/1737014172445-51a4e350-d2e1-4bec-9602-bfccb678458b.png)
+![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML 图/z2hc84u85p.png)
 
 
 
@@ -114,7 +114,7 @@ category:
 
 3、个人理解性记忆：组合关系比较“实”（菱形为实心），整体不存在则部分也不存在了；而聚合关系整体与部分就比较“虚”了（菱形为实心），整体不存在，部分仍可存在。
 
-![图片来源：https://cloud.tencent.com/developer/article/1684161](https://cdn.nlark.com/yuque/0/2025/png/39041043/1737014506899-81d89afe-8016-495c-a3aa-585ceceeba1a.png)
+![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML 图/l3twdqf7fi.png)
 
 
 
@@ -124,7 +124,7 @@ category:
 
 2、代码体现：函数参数。
 
-![图片来源：https://cloud.tencent.com/developer/article/1684161](https://cdn.nlark.com/yuque/0/2025/png/39041043/1737014813111-f23dff95-aed9-46c3-bb4e-a13bb22f53bc.png)
+![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML 图/lplv4x1l3v.png)
 
 
 
@@ -136,7 +136,7 @@ category:
 
 （图片中线存在箭头，可能去掉箭头更合适）
 
-![图片来源：https://cloud.tencent.com/developer/article/1684161](https://cdn.nlark.com/yuque/0/2025/png/39041043/1737014148718-da6ae0c2-2417-4f6f-9804-0d44fcdc7a6b.png)
+![图片来源：https://cloud.tencent.com/developer/article/1684161](./assets/UML 图/vln39o32er.png)
 
 
 
