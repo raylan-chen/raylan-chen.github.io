@@ -1,5 +1,5 @@
 ---
-title: 消息队列
+title: RabbitMQ
 index: false
 ---
 

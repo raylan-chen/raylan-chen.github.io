@@ -4,9 +4,9 @@ category:
   - 开发工具
 ---
 
+# UML图
 
-
-# 参考链接
+## 参考链接
 
 + [一文掌握14种UML图-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/1684161)
 + [看懂UML类图和时序图 — Graphic Design Patterns](https://design-patterns.readthedocs.io/zh-cn/latest/read_uml.html)
@@ -17,7 +17,7 @@ category:
 + [Class diagrams | Mermaid](https://mermaid.js.org/syntax/classDiagram.html) / [类图 | Mermaid 中文网](https://mermaid.nodejs.cn/syntax/classDiagram.html)
 + [小书匠语法说明之mermaid | 小书匠](https://soft.xiaoshujiang.com/docs/grammar/feature/mermaid/)
 
-# UML
+## UML
 🔅统一建模语言（Unified Model Language，UML），由一整套图表组成的标准化建模语言。
 
 
@@ -49,7 +49,7 @@ category:
 
 ![图片来源：https://www.visual-paradigm.com/cn/guide/uml-unified-modeling-language/what-is-uml/#timing-diagram](./assets/UML图/02-uml-diagram-types.png)
 
-# 类图
+## 类图
 ✨访问修饰符的表示
 
 `+`: public
@@ -144,7 +144,7 @@ category:
 
 
 
-# 时序图
+## 时序图
 [UML建模之时序图（Sequence Diagram） - 灵动生活 - 博客园](https://www.cnblogs.com/ywqu/archive/2009/12/22/1629426.html)
 
 

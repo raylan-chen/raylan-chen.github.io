@@ -52,7 +52,7 @@ export default navbar([
     prefix: "",
     children: [
       {
-        text: "消息队列",
+        text: "RabbitMQ",
         link: "/middleware/message_queue/"
       },
     ]
