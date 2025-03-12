@@ -9,6 +9,12 @@ category:
 
 > 以下内容来自个人理解 + 大语言模型 回答
 
+## CPU 与 GPU
+
+![](./assets/GPU_CUDA编程/image-20250312130906933.png)
+
+图片来源:<https://www.nvidia.cn/docs/IO/51635/NVIDIA_CUDA_Programming_Guide_1.1_chs.pdf>
+
 ## CUDA
 
 - 采用 CUDA 编程模型 可以将程序中适合于并行计算部分的**迁移至 GPU 执行**；
@@ -28,7 +34,15 @@ category:
   - AOS和SOA理解：结构体的所有属性放在一起 和 所有结构体的第n个属性放在一起；
 
 - 使用 **共享内存**（使用 线程块的共享内存作为全局内存的缓存）；
+
+  ![](./assets/GPU_CUDA编程/image-20250312130720176.png)
+  
+图片来源:<https://www.nvidia.cn/docs/IO/51635/NVIDIA_CUDA_Programming_Guide_1.1_chs.pdf>
+
 - **线程层次结构**（如何组织 GPU 中的线程，NVIDIA GPU 的 SM 每次调度 32 个线程，若线程块大小非 32 倍数或资源分配不当，可能造成部分线程未被利用）。
+
+  ![](./assets/GPU_CUDA编程/image-20250312130826179.png)
+图片来源:<https://www.nvidia.cn/docs/IO/51635/NVIDIA_CUDA_Programming_Guide_1.1_chs.pdf>
 
 
 
