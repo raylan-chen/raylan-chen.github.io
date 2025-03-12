@@ -58,6 +58,17 @@ export default sidebar({
       expanded: false,
       children: 'structure',
     },
+    {
+      text: "其他",
+      icon: "paper-plane",
+      prefix: "other/",
+      link: "other/",
+      // 可选的, 设置分组是否可以折叠，默认值是 false,
+      collapsible: true,
+      // 可选的。设置分组是否默认展开，默认值是 false
+      expanded: false,
+      children: 'structure',
+    },
     "intro",
     {
       text: "更新时间线",

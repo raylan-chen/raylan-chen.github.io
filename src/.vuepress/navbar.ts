@@ -63,4 +63,10 @@ export default navbar([
     link: "/development_tool/",
     prefix: "",
   },
+
+  {
+    text: "其他",
+    link: "/other/",
+    prefix: "",
+  },
 ]);
