@@ -1,3 +1,11 @@
+---
+title: Spring IoC 初探
+category:
+  - 开源框架
+---
+
+
+
 # Spring IoC 初探
 
 ## 参考链接

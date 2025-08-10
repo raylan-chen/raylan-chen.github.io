@@ -1,3 +1,11 @@
+---
+title: Spring AOP初探
+category:
+  - 开源框架
+---
+
+
+
 # Spring AOP初探
 
 ## 参考链接

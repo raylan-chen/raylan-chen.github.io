@@ -1,4 +1,12 @@
-# Spring Expression Language——Spring表达语言
+---
+title: Spring Expression Language—Spring表达语言
+category:
+  - 开源框架
+---
+
+
+
+# Spring Expression Language—Spring表达语言
 
 ## 参考链接
 
@@ -23,8 +31,10 @@
 ExpressionParser parser = new SpelExpressionParser();
 // 2、解析表达式
 Expression expression = parser.parseExpression("'this is a str'");
-// 3、获取结果，返回是 Object 类型
-String strValue = (String) expression.getValue();
+// 3、获取结果
+String strVaue = (String) expression.getValue();
+// String strValue = expression.getValue(String.class);
+// System.out.println(strValue); // 输出: this is a str
 ```
 
 

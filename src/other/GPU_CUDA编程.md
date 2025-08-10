@@ -9,11 +9,25 @@ category:
 
 > 以下内容来自个人理解 + 大语言模型 回答
 
+
+
+## CUDA 版本选择
+
+CUDA 版本选择注意要搭配对应的 NVIDIA 驱动版本：
+
+[win10 查看GPU型号，驱动版本，CUDA版本_怎么查看gpu版本号-CSDN博客](https://blog.csdn.net/Strive_For_Future/article/details/104388165)
+
+[不同版本cuda对应的NVIDIA驱动版本_cuda12.1对应的驱动版本-CSDN博客](https://blog.csdn.net/mouse1598189/article/details/86695400)
+
+
+
 ## CPU 与 GPU
 
 ![](./assets/GPU_CUDA编程/image-20250312130906933.png)
 
 图片来源:<https://www.nvidia.cn/docs/IO/51635/NVIDIA_CUDA_Programming_Guide_1.1_chs.pdf>
+
+
 
 ## CUDA
 
@@ -37,11 +51,14 @@ category:
 
   ![](./assets/GPU_CUDA编程/image-20250312130720176.png)
   
+
 图片来源:<https://www.nvidia.cn/docs/IO/51635/NVIDIA_CUDA_Programming_Guide_1.1_chs.pdf>
 
 - **线程层次结构**（如何组织 GPU 中的线程，NVIDIA GPU 的 SM 每次调度 32 个线程，若线程块大小非 32 倍数或资源分配不当，可能造成部分线程未被利用）。
 
   ![](./assets/GPU_CUDA编程/image-20250312130826179.png)
+
+
 图片来源:<https://www.nvidia.cn/docs/IO/51635/NVIDIA_CUDA_Programming_Guide_1.1_chs.pdf>
 
 
