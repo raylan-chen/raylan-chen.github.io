@@ -10,15 +10,11 @@
 
 ## 术语
 
-认证（Authentication）
-
-验证用户信息是否合法。
+认证（Authentication）：验证用户信息是否合法。
 
 
 
-鉴权（Authorization）
-
-验证通过认证的用户是否拥有访问某资源的权限。
+鉴权（Authorization）：验证通过认证的用户是否拥有访问某资源的权限。
 
 
 
@@ -36,13 +32,13 @@
 
 request→UsernamePasswordAuthenticationFilter→AuthenticationManager→UserDetailService→认证成功→写入 HttpSession→返回 Cookie
 
-
+<br>
 
 前后端分离 JWT 首次认证：
 
 request→controller→AuthenticationManager.authenticate→ProviderManager→DaoAuthenticationProvider→UserDetailService→BCryptPasswordEncoder→认证成功→生成 JWT→Redis 存储→response
 
-
+<br>
 
 非首次认证 + 鉴权：
 
