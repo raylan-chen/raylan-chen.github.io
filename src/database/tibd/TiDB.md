@@ -35,25 +35,25 @@
 ![ENRJbcgQvoqrLMxOA6mcIMvbnQI](./assets/TiDB/ENRJbcgQvoqrLMxOA6mcIMvbnQI.png)
 
 
-
+<br>
 TiProxy：
 
 负载均衡组件。
 
 
-
+<br>
 TiDB Server：
 
 接收客户端连接，执行 SQL 解析和优化，最终生成分布式执行计划。
 
 
-
+<br>
 PD(Placement Driver) Server：
 
 TiDB 集群元信息管理模块，存储每个 TiKV 节点的数据分布情况，提供 DashBoard 管控界面，为分布式事务分配事务 ID。
 
 
-
+<br>
 TiKV Server(单机 KV 存储引擎 RocksDB)：
 
 负责存储数据，提供事务的 Key-Value 存储引擎，存储数据的基本单位是 Region；TiKV 数据自动维护多副本（默认三副本），天然支持高可用和自动故障转移。

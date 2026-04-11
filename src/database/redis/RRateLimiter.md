@@ -113,18 +113,24 @@ rateLimiter.trySetRate(RateType.OVERALL, rate, rateInterval, rateIntervalUnit);
 
 ## 钻牛角尖
 
-> 原先误以为是 令牌桶，使用 Redis 的 Set（哈希） 结构去储存使用情况，结果一看源码才知道错得有点离谱！
+> 原先误以为是 令牌桶，使用 Redis 的 Hash（哈希） 结构去储存使用情况，结果一看源码才知道错得有点离谱！
 
 Redisson 3.36.0——RRateLimiter 
 
 1、底层：滑动窗口；
 
-2、使用 Redis 的 Set、ZSet、String 三种结构来完成限流；
+2、使用 Redis 的 Hash、ZSet、String 三种结构来完成限流；
 
-- Set（单机键名：getRawName()） 存储设置的速率 rate、间隔 interval、限流器类型（OVERALL 单机、PER_CLIENT 集群）；
+- Hash（单机键名：getRawName()） 存储设置的速率 rate、间隔 interval、限流器类型（OVERALL 单机、PER_CLIENT 集群）；
 - String（单机键名：getValueName()） 存储 目前还可获取到的许可证数量；
 - ZSet（单机键名：getPermitsName()）采用 score 存储 已获取许可证的时间戳，member 存储获取获取许可证的个数；
 
+<br>
+滑动窗示意图：
+
+![image-20260411115549393](./assets/RRateLimiter/image-20260411115549393.png)
+
+<br>
 RRateLimiter#acquire/tryAcquire 涉及到的源码：
 
 ```Java
